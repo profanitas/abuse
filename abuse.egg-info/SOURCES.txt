@@ -5,7 +5,6 @@ setup.cfg
 setup.py
 abuse/__init__.py
 abuse/abuse.py
-abuse/dataset.py
 abuse.egg-info/PKG-INFO
 abuse.egg-info/SOURCES.txt
 abuse.egg-info/dependency_links.txt
