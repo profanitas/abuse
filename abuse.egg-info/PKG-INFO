@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: abuse
+Version: 0.1
+Summary: World's First Profanity Library.
+Home-page: https://github.com/0x48piraj/abuse
+Author: Piyush Raj
+Author-email: piyush.189303055@muj.manipal.edu
+License: MIT
+Description: # abuse
+        > World's First Profanity Library.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
