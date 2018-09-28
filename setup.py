@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='abuse',
-      version='0.1',
+      version='0.1.1',
       url='https://github.com/0x48piraj/abuse',
       license='MIT',
       author='Piyush Raj',
