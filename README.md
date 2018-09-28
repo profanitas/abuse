@@ -1,10 +1,13 @@
-# Abuse: World's First Profanity Library™
+# Abuse: World's First Profanity Library
 
 
-**Behold, the power of Abuse v1:**
+**Behold, the power of Abuse v1.**
 
+**Abuse** allows you to use profanity when you need it, without the need for getting angry. There's no need to manually search curse words from **Google**, or to ask anybody. Abuse is 100% automatic, thanks to Python.
 
-- Let's import the beast first :
+Besides, all the cool kids are doing it. You should try it!
+
+- Let's import the beast :
 
 ```
 >>>import abuse as ab
@@ -12,13 +15,6 @@
 
 ['...', '...', '...'] #gives a list of abuses starting with the letter 'a'
 ```
-
-
-
-**Abuse** allows you to use profanity when you need it, without the need for getting angry. There's no need to manually search curse words from **Google**, or to ask anybody. Abuse is 100% automatic, thanks to Python.
-
-Besides, all the cool kids are doing it. You should try it!
-
 
 # Feature Support
 
@@ -30,7 +26,7 @@ Besides, all the cool kids are doing it. You should try it!
 - `ListAllAbuses()` : Returns list of abuses in it's database.
 
 
-_Abuse officially supports Python 3.4–3.7, but can also run on Python 2._
+_Abuse officially supports Python 3.4 to 3.7, but can also run on Python 2._
 
 
 # Installation
