@@ -5,6 +5,7 @@ dataset=['anus', 'arse', 'arsehole', 'ass', 'ass-hat', 'ass-jabber', 'ass-pirate
 
 
 def ListAbusesFrom(data_in):
+    """ Returns list of abuses starting from a specific letter provided in argument of the function. """
     _temp = []
     if type(data_in) is not str:
         return ("No Abuse Words from", data_in, "Provide input between a-z instead")
@@ -13,10 +14,13 @@ def ListAbusesFrom(data_in):
         if i.startswith(data_in):
             _temp.append(i)
 
-    return _temp
-
+    if len(_temp) == 0:
+        print("Sorry didn't found any word for that letter, we are constantly improving the dataset.")
+    else:
+        return _temp
 
 def RandomAbuseFrom(data_in):
+    """ Returns a random abuse starting from a specific letter provided in argument of the function. """
     _temp = []
     if type(data_in) is not str:
         return ("No Abuse Words from", data_in, "Provide input between a-z instead")
@@ -29,9 +33,10 @@ def RandomAbuseFrom(data_in):
 
 
 def ListAnyAbuse():
+    """ Returns any random abuse from it's built-in dataset. """
     return random.choice(dataset)
 
 
 def ListAllAbuses():
+    """ Just returns all the abusive words present in the dataset. """
     return dataset
-
