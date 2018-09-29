@@ -35,15 +35,3 @@ def ListAnyAbuse():
 def ListAllAbuses():
     return dataset
 
-
-def ForName(data_in):
-	#Create fancy new nicknames for your friends!
-    _temp = []
-    if type(data_in) is not str:
-        return ("No Abuse Words from", data_in, "Provide input between a-z instead")
-    data_In = str(data_in[0]).lower()
-    for i in dataset:
-        if i.startswith(data_In):
-            _temp.append(i)
-    lst = [data_in + ' ' + x for x in _temp]	
-    return lst
