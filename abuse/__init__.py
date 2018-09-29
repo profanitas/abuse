@@ -28,8 +28,10 @@ def RandomAbuseFrom(data_in):
     for i in dataset:
         if i.startswith(data_in):
             _temp.append(i)
-
-    return random.choice(_temp)
+    if len(_temp) == 0:
+        print("Sorry didn't found any word for that letter, we are constantly improving the dataset.")
+    else:
+        return random.choice(_temp)
 
 
 def ListAnyAbuse():
