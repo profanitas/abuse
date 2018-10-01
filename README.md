@@ -1,5 +1,6 @@
 # Abuse: World's First Profanity Library
 
+[![forthebadge: F** It! Ship It!](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com) [![forthebadge: Made With Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge: Kinda Safe For Work](https://forthebadge.com/images/badges/kinda-sfw.svg)](https://forthebadge.com) [![forthebadge: Creative Commons - Non-Commercial - Sharealike](https://forthebadge.com/images/badges/cc-nc-sa.svg)](https://forthebadge.com)
 
 **Behold, the power of Abuse v1.**
 
