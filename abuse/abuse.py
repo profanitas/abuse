@@ -1,7 +1,9 @@
 import random
 import pandas as pd
+import os
 
 DATASET = []
+
 
 def load_dataset(func):
     """ Loads the dataset from the csv and puts it into the global variable DATASET"""
@@ -9,7 +11,9 @@ def load_dataset(func):
         global DATASET
 
         if len(DATASET) == 0:
-            DATASET = pd.read_csv('abuse_en.csv')['words'].values.tolist()
+            current_file = os.path.abspath(os.path.dirname(__file__))
+            csv_filename = os.path.join(current_file, 'abuse_en.csv')
+            DATASET = pd.read_csv(csv_filename)['words'].values.tolist()
         return func(*args)
     return inner
 
@@ -22,6 +26,7 @@ def listAbusesFrom(data_in):
 
     words = [i for i in DATASET if i.lower().startswith(data_in.lower())]
     return words
+
 
 @load_dataset
 def randomAbuseFrom(data_in):
@@ -47,4 +52,4 @@ def listAllAbuses():
     return list(DATASET)  # Cast to list to make a copy
 
 
-__all__ = ('listAbusesFrom', 'randomAbuseFrom', 'listAllAbuse', 'listAnyAbuse')
+__all__ = ('listAbusesFrom', 'randomAbuseFrom', 'listAllAbuses', 'listAnyAbuse')
