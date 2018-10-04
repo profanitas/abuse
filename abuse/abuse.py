@@ -1,5 +1,6 @@
 import random
 import pandas as pd
+import webbrowser
 
 DATASET = []
 
@@ -45,6 +46,11 @@ def listAnyAbuse():
 def listAllAbuses():
     """ Just returns all the abusive words present in the dataset. """
     return list(DATASET)  # Cast to list to make a copy
+
+@load_dataset
+def searchAbuse(data_in):
+    url = 'https://www.urbandictionary.com/define.php?term='+data_in
+    webbrowser.open_new(url) #opens meaning in default browser in urban dictionary
 
 
 __all__ = ('listAbusesFrom', 'randomAbuseFrom', 'listAllAbuse', 'listAnyAbuse')
