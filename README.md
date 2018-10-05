@@ -2,6 +2,8 @@
 
 [![forthebadge: F** It! Ship It!](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com) [![forthebadge: Made With Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge: Kinda Safe For Work](https://forthebadge.com/images/badges/kinda-sfw.svg)](https://forthebadge.com) [![forthebadge: Creative Commons - Non-Commercial - Sharealike](https://forthebadge.com/images/badges/cc-nc-sa.svg)](https://forthebadge.com)
 
+![LOGO](https://i.imgur.com/lxNi789.png)
+
 **Behold, the power of Abuse v1.** (https://pypi.org/project/abuse/)
 
 **Abuse** allows you to use profanity when you need it, without the need for getting angry. There's no need to manually search curse words from **Google**, or to ask anybody. Abuse is 100% automatic, thanks to Python.
