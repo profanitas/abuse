@@ -1,55 +1,45 @@
+__all__ = ('listAbusesFrom', 'randomAbuseFrom', 'listAllAbuses', 'listAnyAbuse')
+
 import random
-import pandas as pd
+import csv
 import os
 
-DATASET = []
+_DATASET = []
+
+def load_dataset():
+    """ Loads the dataset from the csv and puts it into the global variable _DATASET"""
+    current_file = os.path.abspath(os.path.dirname(__file__))
+    csv_filename = os.path.join(current_file, 'abuse_en.csv')
+
+    with open(csv_filename) as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            _DATASET.append(row[0])
 
 
-def load_dataset(func):
-    """ Loads the dataset from the csv and puts it into the global variable DATASET"""
-    def inner(*args):
-        global DATASET
-
-        if len(DATASET) == 0:
-            current_file = os.path.abspath(os.path.dirname(__file__))
-            csv_filename = os.path.join(current_file, 'abuse_en.csv')
-            DATASET = pd.read_csv(csv_filename)['words'].values.tolist()
-        return func(*args)
-    return inner
-
-
-@load_dataset
-def listAbusesFrom(data_in):
+def listAbusesFrom(first_letter):
     """ Returns list of abuses starting from a specific letter provided in argument of the function. """
-    if not isinstance(data_in, str):
-        raise ValueError("data_in must be a string")
+    if not (isinstance(first_letter, str) and first_letter.isalpha() and len(first_letter) == 1):
+        raise ValueError("argument must be a letter")
+    first_letter = first_letter.lower()
 
-    words = [i for i in DATASET if i.lower().startswith(data_in.lower())]
-    return words
+    return [w for w in _DATASET if w.lower().startswith(first_letter)]
 
 
-@load_dataset
-def randomAbuseFrom(data_in):
+def randomAbuseFrom(first_letter):
     """ Returns a random abuse starting from a specific letter provided in argument of the function. """
-    if not isinstance(data_in, str):
-        raise ValueError("data_in must be a string")
-
-    words = [i for i in DATASET if i.lower().startswith(data_in.lower())]
-    if not words:
-        return None
-    return random.choice(words)
+    words = listAbusesFrom(first_letter)
+    return random.choice(words) if words is not None else None
 
 
-@load_dataset
 def listAnyAbuse():
     """ Returns any random abuse from it's built-in dataset. """
-    return random.choice(DATASET)
+    return random.choice(_DATASET)
 
 
-@load_dataset
 def listAllAbuses():
     """ Just returns all the abusive words present in the dataset. """
-    return list(DATASET)  # Cast to list to make a copy
+    return _DATASET.copy()
 
 
-__all__ = ('listAbusesFrom', 'randomAbuseFrom', 'listAllAbuses', 'listAnyAbuse')
+load_dataset()
