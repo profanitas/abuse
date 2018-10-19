@@ -6,6 +6,7 @@ import os
 
 _DATASET = []
 
+
 def load_dataset():
     """ Loads the dataset from the csv and puts it into the global variable _DATASET"""
     current_file = os.path.abspath(os.path.dirname(__file__))
@@ -13,6 +14,7 @@ def load_dataset():
 
     with open(csv_filename) as csvfile:
         reader = csv.reader(csvfile)
+        next(reader, None)  # headers
         for row in reader:
             _DATASET.append(row[0])
 
