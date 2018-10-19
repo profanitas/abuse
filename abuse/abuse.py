@@ -1,21 +1,39 @@
 __all__ = ('list_abuses_from', 'random_abuse_from', 'list_all_abuses', 'random_abuse')
 
-import random
+import bisect
 import csv
+import itertools
 import os
+import random
 
-_DATASET = []
+_DATASET = None
+
+DATASET_FILENAME = 'abuse_en.csv'
+
+
+def get_dataset():
+    global _DATASET
+
+    if _DATASET is None:
+        _DATASET = sorted(set(load_dataset()))
+    return _DATASET
 
 
 def load_dataset():
-    """ Loads the dataset from the csv and puts it into the global variable _DATASET"""
-    current_file = os.path.abspath(os.path.dirname(__file__))
-    csv_filename = os.path.join(current_file, 'abuse_en.csv')
-
-    with open(csv_filename) as csvfile:
+    with open(_file_full_path(DATASET_FILENAME), newline='') as csvfile:
         reader = csv.reader(csvfile)
-        for row in reader:
-            _DATASET.append(row[0])
+        next(reader, None)  # headers
+        return (r[0].strip().lower() for r in list(reader) if r[0].strip())
+
+
+def dump_dataset(filename=None):
+    filename = filename or DATASET_FILENAME
+
+    with open(_file_full_path(filename), 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile, lineterminator='\n')
+        writer.writerow(['words'])
+        for w in get_dataset():
+            writer.writerow([w])
 
 
 def list_abuses_from(first_letter):
@@ -24,7 +42,9 @@ def list_abuses_from(first_letter):
         raise ValueError("argument must be a letter")
     first_letter = first_letter.lower()
 
-    return [w for w in _DATASET if w.lower().startswith(first_letter)]
+    dataset = get_dataset()
+    index_first = bisect.bisect_left(dataset, first_letter)
+    return list(itertools.takewhile(lambda w: w.startswith(first_letter), dataset[index_first:]))
 
 
 def random_abuse_from(first_letter):
@@ -35,12 +55,17 @@ def random_abuse_from(first_letter):
 
 def random_abuse():
     """ Returns any random abuse from it's built-in dataset. """
-    return random.choice(_DATASET)
+    return random.choice(get_dataset())
 
 
 def list_all_abuses():
     """ Just returns all the abusive words present in the dataset. """
-    return _DATASET.copy()
+    return get_dataset().copy()
+
+
+def _file_full_path(filename):
+    current_dir = os.path.abspath(os.path.dirname(__file__))
+    return os.path.join(current_dir, filename)
 
 
 load_dataset()
