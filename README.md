@@ -2,7 +2,9 @@
 
 [![forthebadge: F** It! Ship It!](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com) [![forthebadge: Made With Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge: Kinda Safe For Work](https://forthebadge.com/images/badges/kinda-sfw.svg)](https://forthebadge.com) [![forthebadge: Creative Commons - Non-Commercial - Sharealike](https://forthebadge.com/images/badges/cc-nc-sa.svg)](https://forthebadge.com)
 
-![LOGO](https://i.imgur.com/lxNi789.png)
+![Logo by Manav Kapil](https://i.imgur.com/lxNi789.png)
+
+> This logo was created by my friend, **Manav Kapil**. Have a look at his [Behance Profile](https://www.behance.net/manavkapil6a3a)!
 
 **Behold, the power of Abuse v1.** (https://pypi.org/project/abuse/)
 
