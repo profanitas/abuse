@@ -16,7 +16,7 @@ Besides, all the cool kids are doing it. You should try it!
 
 ```
 >>>import abuse as ab
->>>ab.ListAbusesFrom("a")
+>>>ab.list_abuses_from("a")
 
 ['...', '...', '...'] #gives a list of abuses starting with the letter 'a'
 ```
@@ -25,10 +25,10 @@ Besides, all the cool kids are doing it. You should try it!
 
 > Abuse is in it's beta.
 
-- `ListAbusesFrom()` : Returns list of abuses starting from a specific letter.
-- `RandomAbuseFrom()` : Returns a random abuse starting from a specific letter.
-- `ListAnyAbuse()` : Returns any random abuse from it's built-in dataset.
-- `ListAllAbuses()` : Returns list of abuses in it's database.
+- `list_abuses_from(first_letter)` : Returns list of abuses starting from a specific letter.
+- `random_abuse_from(first_letter()` : Returns a random abuse starting from a specific letter.
+- `random_abuse()` : Returns any random abuse from it's built-in dataset.
+- `list_all_abuses()` : Returns list of abuses in it's database.
 
 
 _Abuse officially supports Python 3.4 to 3.7, but can also run on Python 2._
