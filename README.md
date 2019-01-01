@@ -1,7 +1,7 @@
 # Abuse: World's First Profanity Library
 
-[![PyPI download month](https://img.shields.io/pypi/dm/abuse.svg)](https://pypi.python.org/pypi/abuse/)
-
+[![PyPI Download/Month](https://img.shields.io/pypi/dm/abuse.svg)](https://pypi.python.org/pypi/abuse/)
+[![PyPI Version](https://img.shields.io/pypi/v/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 
 
 
