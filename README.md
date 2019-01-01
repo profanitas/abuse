@@ -4,7 +4,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 [![PyPI license](https://img.shields.io/pypi/l/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/abuse.svg)](https://pypi.python.org/pypi/abuse/)
-
+[![PyPI implementation](https://img.shields.io/pypi/implementation/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 
 [![forthebadge: F** It! Ship It!](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com) [![forthebadge: Made With Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge: Kinda Safe For Work](https://forthebadge.com/images/badges/kinda-sfw.svg)](https://forthebadge.com) [![forthebadge: Creative Commons - Non-Commercial - Sharealike](https://forthebadge.com/images/badges/cc-nc-sa.svg)](https://forthebadge.com)
 
