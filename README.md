@@ -2,6 +2,7 @@
 
 [![PyPI Download/Month](https://img.shields.io/pypi/dm/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 [![PyPI Version](https://img.shields.io/pypi/v/abuse.svg)](https://pypi.python.org/pypi/abuse/)
+[![PyPI license](https://img.shields.io/pypi/l/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 
 
 
