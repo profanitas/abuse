@@ -1,5 +1,10 @@
 # Abuse: World's First Profanity Library
 
+[![PyPI download month](https://img.shields.io/pypi/dm/abuse.svg)](https://pypi.python.org/pypi/abuse/)
+
+
+
+
 [![forthebadge: F** It! Ship It!](https://forthebadge.com/images/badges/fuck-it-ship-it.svg)](https://forthebadge.com) [![forthebadge: Made With Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com) [![forthebadge: Kinda Safe For Work](https://forthebadge.com/images/badges/kinda-sfw.svg)](https://forthebadge.com) [![forthebadge: Creative Commons - Non-Commercial - Sharealike](https://forthebadge.com/images/badges/cc-nc-sa.svg)](https://forthebadge.com)
 
 ![Logo by Manav Kapil](https://i.imgur.com/lxNi789.png)
