@@ -13,7 +13,7 @@
 
 ![Logo by Manav Kapil](https://i.imgur.com/lxNi789.png)
 
-> This logo was created by my friend, **Manav Kapil**. Have a look at his [Behance Profile](https://www.behance.net/manavkapil6a3a)!
+> This logo was created by my friend, **Manav Kapil**. Have a look at his [Behance Profile](https://www.behance.net/manavkapil1999)!
 
 **Behold, the power of Abuse v1.** (https://pypi.org/project/abuse/)
 
@@ -68,8 +68,6 @@ C:\>py -3 -m pip install abuse
 ```
 
 **Satisfaction guaranteed.**
-
-
 
 # Documentation
 Fantastic documentation will be available in some days, for a limited time only.
