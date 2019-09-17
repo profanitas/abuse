@@ -1,5 +1,7 @@
 # Abuse: World's First Profanity Library
 
+> Abuse is in it's beta.
+
 [![PyPI Download/Month](https://img.shields.io/pypi/dm/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 [![PyPI Version](https://img.shields.io/pypi/v/abuse.svg)](https://pypi.python.org/pypi/abuse/)
 [![PyPI license](https://img.shields.io/pypi/l/abuse.svg)](https://pypi.python.org/pypi/abuse/)
@@ -15,56 +17,43 @@
 
 > This logo was created by my friend, **Manav Kapil**. Have a look at his [Behance Profile](https://www.behance.net/manavkapil1999)!
 
-**Behold, the power of Abuse v1.** (https://pypi.org/project/abuse/)
+### Behold, the power of Abuse
 
 **Abuse** allows you to use profanity when you need it, without the need for getting angry. There's no need to manually search curse words from **Google**, or to ask anybody. Abuse is 100% automatic, thanks to Python.
 
+It's available over Python Package Installer as **[PyPI/abuse](https://pypi.org/project/abuse/)**
+
 Besides, all the cool kids are doing it. You should try it!
 
-- Let's import the beast :
+#### Let's import the beast
 
 ```
 >>>import abuse as ab
->>>ab.list_abuses_from("a")
+>>>ab.list_from("a")
 
-['...', '...', '...'] #gives a list of abuses starting with the letter 'a'
+['...', '...', '...'] # gives a nice list of profane words starting with the letter 'a'
 ```
 
-# Feature Support
+# Usage
 
-> Abuse is in it's beta.
+- `list_from('letter')` : Returns list of abuses starting from a specific letter.
+- `random_from('letter')` : Returns a random abuse starting from a specific letter.
+- `random()` : Returns any random profane word from it's built-in dataset.
+- `list_all()` : Returns list of profane words in it's database.
 
-- `list_abuses_from(first_letter)` : Returns list of abuses starting from a specific letter.
-- `random_abuse_from(first_letter()` : Returns a random abuse starting from a specific letter.
-- `random_abuse()` : Returns any random abuse from it's built-in dataset.
-- `list_all_abuses()` : Returns list of abuses in it's database.
+# Compatibility
 
-
-_Abuse officially supports Python 3.4 to 3.7, but can also run on Python 2._
-
+_Abuse officially supports Python 3.4 to 3.7, but can also run on Python 2.*_
 
 # Installation
 
 To install Abuse, simply use pipenv _(or pip, of course)_:
 
-- For Linux :
-
 ```
 $ pip install abuse
-```
-OR
-```
 $ pipenv install abuse
-```
-
-- For Windows :
-
-```
 C:\Python34\Scripts> pip install abuse
-```
-OR
-```
-C:\>py -3 -m pip install abuse
+C:\> py -3 -m pip install abuse
 ```
 
 **Satisfaction guaranteed.**
